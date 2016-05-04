@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "bundles": [
+    {
+      "uri": "main",
+      "pkg": "com.tiny.smallhost.app.main"
+    },
+    {
+      "uri":"lib.style",
+      "pkg":"com.tiny.smallhost.lib.style"
+    }
+  ]
+}
