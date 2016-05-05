@@ -1,4 +1,4 @@
-package net.wequick.example.small.app.main;
+package com.tiny.app.main;
 
 import org.junit.Test;
 

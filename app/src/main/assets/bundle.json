@@ -3,11 +3,11 @@
   "bundles": [
     {
       "uri": "main",
-      "pkg": "com.tiny.smallhost.app.main"
+      "pkg": "com.tiny.app.main"
     },
     {
-      "uri":"lib.style",
-      "pkg":"com.tiny.smallhost.lib.style"
+      "uri": "lib.style",
+      "pkg": "com.tiny.smallhost.lib.style"
     }
   ]
 }

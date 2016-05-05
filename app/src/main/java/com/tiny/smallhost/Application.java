@@ -13,7 +13,7 @@ public class Application extends android.app.Application{
     public void onCreate() {
         super.onCreate();
 
-        Small.setBaseUri("http://m.wequick.net/demo/");
+        Small.setBaseUri("http://tiny.sample/demo/");
 
         Small.preSetUp(this);
     }

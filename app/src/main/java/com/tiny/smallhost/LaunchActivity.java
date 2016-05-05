@@ -4,6 +4,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -14,6 +15,8 @@ import net.wequick.small.Small;
  * status bar and navigation/system bar) with user interaction.
  */
 public class LaunchActivity extends AppCompatActivity {
+    private final static String TAG = "LaunchActivity";
+
     private View mContentView;
 
     @Override
@@ -46,12 +49,24 @@ public class LaunchActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+    }
+
+    @Override
+    protected void onResume() {
+        Log.d(TAG, "onResume");
+        super.onResume();
         Small.setUp(this, new net.wequick.small.Small.OnCompleteListener() {
             @Override
             public void onComplete() {
                 Small.openUri("main", LaunchActivity.this);
-                finish();
+                //finish();
             }
         });
+    }
+
+    @Override
+    protected void onStop() {
+        Log.d(TAG, "onStop");
+        super.onStop();
     }
 }
